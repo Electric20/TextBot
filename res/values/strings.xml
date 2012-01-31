@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TextBot</string>
+	<string name="remote_service_started">Downloading data...</string>
+	<string name="remote_service_stopped">Download service stopped</string>
+	<string name="remote_service_label">Download service</string>
+	<string name="done">Done</string>
+	<string name="remote_service_connected">connected CloudPull_Service</string>
+	<string name="remote_service_disconnected">disconnected CloudPull_Service </string>
+</resources>

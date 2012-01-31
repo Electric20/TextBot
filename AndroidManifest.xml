@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="uk.ac.nott.mrl.jef.TextBot"
+      android:versionCode="1"
+      android:versionName="1.0">
+
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".TextBot"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+		<service android:name=".TextSchedulerService" android:process=":remote" />
+		<service android:name=".TextSenderService" android:process=":remote" />
+		<service android:name=".PullData_Service" android:process=":remote" />
+		
+        <receiver android:name=".Text_BroadcastReceiver" android:enabled="true"/>    
+        <receiver android:name=".LogSentMessages" android:enabled="true"/>
+        <receiver android:name=".LogDeliveredMessages" android:enabled="true"/>
+        
+
+    </application>    
+    
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    
+</manifest>

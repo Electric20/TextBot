@@ -1,0 +1,8 @@
+TextBot 
+------
+Android app used in the electric20 study to send text messages (SMS) to participants.
+
+Relies on absent class Participant.java, contact me to get it/info how to use without it. 
+Participant.java is absent because it contains participants' personal information (phone numbers etc.). 
+
+(c) Joel Fischer for the University of Nottingham
